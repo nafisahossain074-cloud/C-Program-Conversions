@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    double num;
+    char str[50]; // String to store the double
+
+    printf("Enter a double number: ");
+    scanf("%lf", &num);  // %lf is used for double input
+
+    // Convert double to string
+    sprintf(str, "%lf", num);  // You can also use "%.2lf" for 2 decimal places
+
+    printf("The double as a string is: %s\n", str);
+
+    return 0;
+}
