@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    long num;
+    char str[50]; // String to store the long number
+
+    printf("Enter a long number: ");
+    scanf("%ld", &num);
+
+    // Convert long to string
+    sprintf(str, "%ld", num);
+
+    printf("The long number as a string is: %s\n", str);
+
+    return 0;
+}
