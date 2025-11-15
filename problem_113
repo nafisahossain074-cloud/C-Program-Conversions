@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int octal, decimal;
+
+    printf("Enter an octal number: ");
+    scanf("%o", &octal); // %o reads octal input
+
+    decimal = octal; // C automatically converts to decimal when printing with %d
+
+    printf("The decimal equivalent is: %d\n", decimal);
+
+    return 0;
+}
